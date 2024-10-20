@@ -1,82 +1,56 @@
-# HomeImprovementHub
+# Home Improvement Agents Hub
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+This project is a web application that serves as a hub for customers to find agents for various home improvement services. The application allows customers to view agents, book services, and leave reviews for completed jobs. The backend API is built using ASP.NET Core with a minimal API structure, and the front-end is developed using React, TailwindCSS, Tanstack Query, Shadcn, and NX.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Table of Contents
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [Database Structure](#database-structure)
+- [API Endpoints](#api-endpoints)
+- [Seed Data](#seed-data)
+- [Available Commands](#available-commands)
 
-## Finish your CI setup
+## Technologies Used
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/ZI9nc8RBcN)
+### Backend
 
+- ASP.NET Core Minimal API
+- Entity Framework Core (with SQL Server)
+- AutoMapper (for DTOs)
+- Microsoft SQL Server (LocalDB for development)
 
-## Run tasks
+### Frontend
 
-To run the dev server for your app, use:
+- React
+- NX Monorepo
+- React Router DOM
+- TailwindCSS
+- Shadcn UI components
+- Tanstack Query (formerly React Query)
+- Axios (for API calls)
 
-```sh
-npx nx serve home-improvement-hub
-```
+## Features
 
-To create a production bundle:
+- View agents and their specialties.
+- Book home improvement services from agents.
+- Leave reviews for completed jobs.
+- Manage customer profiles.
+- Full API and database interaction using ASP.NET Core and Entity Framework.
 
-```sh
-npx nx build home-improvement-hub
-```
+## Setup Instructions
 
-To see all available targets to run for a project, run:
+### Prerequisites
 
-```sh
-npx nx show project home-improvement-hub
-```
+Ensure you have the following installed:
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+- [.NET 6 SDK](https://dotnet.microsoft.com/download)
+- [Node.js and npm](https://nodejs.org/en/download/) (for frontend development)
+- [SQL Server or LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2019-express-localdb)
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 1. Clone the repository
 
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/react:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/react:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```bash
+git clone https://github.com/your-username/home-improvement-hub.git
+cd home-improvement-hub
