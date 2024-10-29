@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
   Alert, AlertDescription,
-  AlertTitle
+  AlertTitle, Button
 } from '@home-improvement-hub/shadcn';
 import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
 
@@ -32,6 +32,8 @@ export function App() {
           Your session has expired. Please log in again.
         </AlertDescription>
       </Alert>
+      <Button variant="outline">Button</Button>
+
     </div>
   );
 }
