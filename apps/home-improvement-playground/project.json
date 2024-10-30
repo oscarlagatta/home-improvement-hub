@@ -1,0 +1,9 @@
+{
+  "name": "home-improvement-playground",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/home-improvement-playground/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project home-improvement-playground --web",
+  "targets": {}
+}
