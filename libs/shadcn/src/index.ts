@@ -35,4 +35,15 @@ export * from './components/dropdown-menu';
 export * from './components/drawer';
 export * from './components/dialog';
 export * from './components/form';
+export * from './components/aspect-ratio';
+export * from './components/avatar';
+export * from './components/badge';
+export * from './components/breadcrumb';
+export * from './components/card';
+export * from './components/carousel';
+export * from './components/chart';
+export * from './components/checkbox';
+export * from './components/collapsible';
+export * from './components/command';
+export * from './components/context-menu';
 
