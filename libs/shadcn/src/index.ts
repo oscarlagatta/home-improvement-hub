@@ -28,4 +28,11 @@ export * from './components/toast';
 export * from './components/toaster';
 export * from './components/use-toast';
 export * from './components/sonner';
+export * from './components/input-otp';
+export * from './components/input';
+export * from './components/hover-card';
+export * from './components/dropdown-menu';
+export * from './components/drawer';
+export * from './components/dialog';
+export * from './components/form';
 
