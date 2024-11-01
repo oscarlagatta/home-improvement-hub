@@ -21,6 +21,9 @@
       "@home-improvement-hub/feature-bookings": [
         "libs/feature-bookings/src/index.ts"
       ],
+      "@home-improvement-hub/feature-reviews": [
+        "libs/feature-reviews/src/index.ts"
+      ],
       "@home-improvement-hub/feature-services": [
         "libs/feature-services/src/index.ts"
       ],
