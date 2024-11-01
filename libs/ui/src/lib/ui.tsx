@@ -1,5 +1,9 @@
 export function Ui() {
-  return <h1>Welcome to Ui!</h1>;
+  return (
+    <div>
+      <h1>Welcome to Ui!</h1>;
+    </div>
+  );
 }
 
 export default Ui;
