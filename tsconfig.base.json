@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@home-improvement-hub/feature-agents": [
+        "libs/feature-agents/src/index.ts"
+      ],
       "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
       "@home-improvement-hub/ui": ["libs/ui/src/index.ts"]
     }
