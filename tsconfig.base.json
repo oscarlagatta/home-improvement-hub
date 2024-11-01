@@ -32,7 +32,8 @@
       "@home-improvement-hub/routing": ["libs/routing/src/index.ts"],
       "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
       "@home-improvement-hub/state": ["libs/state/src/index.ts"],
-      "@home-improvement-hub/ui": ["libs/ui/src/index.ts"]
+      "@home-improvement-hub/ui": ["libs/ui/src/index.ts"],
+      "@home-improvement-hub/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,15 +1,5 @@
-import styled from 'tailwind';
-
-const StyledUi = styled.div`
-  color: pink;
-`;
-
 export function Ui() {
-  return (
-    <StyledUi>
-      <h1>Welcome to Ui!</h1>
-    </StyledUi>
-  );
+  return <h1>Welcome to Ui!</h1>;
 }
 
 export default Ui;
