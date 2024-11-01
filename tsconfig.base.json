@@ -18,6 +18,12 @@
       "@home-improvement-hub/feature-agents": [
         "libs/feature-agents/src/index.ts"
       ],
+      "@home-improvement-hub/feature-bookings": [
+        "libs/feature-bookings/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-services": [
+        "libs/feature-services/src/index.ts"
+      ],
       "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
       "@home-improvement-hub/ui": ["libs/ui/src/index.ts"]
     }
