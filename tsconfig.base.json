@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"]
+      "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
+      "@home-improvement-hub/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
