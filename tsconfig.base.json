@@ -24,6 +24,7 @@
       "@home-improvement-hub/feature-services": [
         "libs/feature-services/src/index.ts"
       ],
+      "@home-improvement-hub/models": ["libs/models/src/index.ts"],
       "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
       "@home-improvement-hub/ui": ["libs/ui/src/index.ts"]
     }

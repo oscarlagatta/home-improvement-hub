@@ -1,15 +1,5 @@
-import styled from 'tailwind';
-
-const StyledFeatureAgents = styled.div`
-  color: pink;
-`;
-
 export function FeatureAgents() {
-  return (
-    <StyledFeatureAgents>
-      <h1>Welcome to FeatureAgents!</h1>
-    </StyledFeatureAgents>
-  );
+  return <h1>Welcome to FeatureAgents!</h1>;
 }
 
 export default FeatureAgents;
