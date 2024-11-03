@@ -9,6 +9,8 @@ import {
 
 } from '@home-improvement-hub/shadcn';
 import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
+import { FeatureAgents } from '@home-improvement-hub/feature-agents';
+
 
 export function App() {
   return (
@@ -36,6 +38,7 @@ export function App() {
       </Alert>
       <Button variant="outline">Button</Button>
 
+      <FeatureAgents />
     </div>
   );
 }
