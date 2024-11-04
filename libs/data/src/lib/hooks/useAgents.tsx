@@ -1,29 +1,29 @@
-import { useQuery } from '@tanstack/react-query';
-import { AgentDto, CustomerDto, JobDto, ReviewDto, ServiceDto } from '../api';
+import { useMutation, useQuery } from '@tanstack/react-query';
+import { AgentDto } from '../api';
 import {
+  deleteAgentsByIdMutation,
   getAgentsOptions,
-  getCustomersOptions,
-  getJobsOptions,
-  getReviewsOptions,
-  getServicesOptions,
+  postAgentsMutation,
+  putAgentsByIdMutation,
 } from '../api/@tanstack/react-query.gen';
 
-export function useCoreData() {
-  const agents = useQuery(getAgentsOptions());
+export function useAgents(options = {}) {
+  const query = useQuery({
+    ...getAgentsOptions(),
+    ...options,
+  });
 
-  const services = useQuery(getServicesOptions());
-
-  const customers = useQuery(getCustomersOptions());
-
-  const jobs = useQuery(getJobsOptions());
-
-  const reviews = useQuery(getReviewsOptions());
+  const updateAgent = useMutation(putAgentsByIdMutation());
+  const createAgent = useMutation(postAgentsMutation());
+  const deleteAgent = useMutation(deleteAgentsByIdMutation());
 
   return {
-    agents: agents.data as AgentDto[],
-    services: services.data as ServiceDto[],
-    customers: customers.data as CustomerDto[],
-    jobs: jobs.data as JobDto[],
-    reviews: reviews.data as ReviewDto[],
+    agents: query.data as AgentDto[],
+    isLoading: query.isLoading,
+    isError: query.isError,
+    error: query.error,
+    updateAgent: updateAgent.mutate,
+    createAgent: createAgent.mutate,
+    deleteAgent: deleteAgent.mutate,
   };
 }

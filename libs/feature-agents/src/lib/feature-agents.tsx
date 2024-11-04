@@ -1,7 +1,8 @@
-import { useCoreData } from '@home-improvement-hub/data';
+import { useAgents } from '@home-improvement-hub/data';
+
 
 export function FeatureAgents() {
-  const { agents } = useCoreData();
+  const { agents } = useAgents();
   return (
     <div>
       <h1>Welcome to FeatureAgents!</h1>
