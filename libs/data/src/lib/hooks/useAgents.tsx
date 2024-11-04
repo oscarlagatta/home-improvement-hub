@@ -1,8 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
-import { AgentDto, getAgents } from '../api';
+import { AgentDto, CustomerDto, getAgents, JobDto, ReviewDto, ServiceDto } from '../api';
+import {
+  getAgentsOptions,
+  getCustomersOptions,
+  getJobsOptions, getReviewsOptions,
+  getServicesOptions
+} from '../api/@tanstack/react-query.gen';
 
 
-export function useAgents() :{
+export function useAgents(): {
   agents: AgentDto[] | undefined;
   isLoading: boolean;
   error: Error | null
@@ -19,5 +25,25 @@ export function useAgents() :{
     }
   });
 
-  return { agents, isLoading, error}
+  return { agents, isLoading, error };
+}
+
+export function useCoreData() {
+  const agents = useQuery(getAgentsOptions());
+
+  const services = useQuery(getServicesOptions());
+
+  const customers = useQuery(getCustomersOptions());
+
+  const jobs = useQuery(getJobsOptions());
+
+  const reviews = useQuery(getReviewsOptions());
+
+  return {
+    agents: (agents.data as AgentDto[]),
+    services: (services.data as ServiceDto[]),
+    customers: (customers.data as CustomerDto[]),
+    jobs: (jobs.data as JobDto[]),
+    reviews: (reviews.data as ReviewDto[]),
+  };
 }
