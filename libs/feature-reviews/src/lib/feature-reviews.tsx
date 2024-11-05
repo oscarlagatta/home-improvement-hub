@@ -1,15 +1,16 @@
-import styled from 'tailwind';
-
-const StyledFeatureReviews = styled.div`
-  color: pink;
-`;
+import { useCoreData } from '@home-improvement-hub/data';
 
 export function FeatureReviews() {
+
+  const { reviews } = useCoreData();
   return (
-    <StyledFeatureReviews>
+    <div>
       <h1>Welcome to FeatureReviews!</h1>
-    </StyledFeatureReviews>
+      <pre>{JSON.stringify(reviews, null, 2)}</pre>
+
+    </div>
   );
+
 }
 
 export default FeatureReviews;

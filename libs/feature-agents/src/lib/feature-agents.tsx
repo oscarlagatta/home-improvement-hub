@@ -6,6 +6,7 @@ export function FeatureAgents() {
     <div>
       <h1>Welcome to FeatureAgents!</h1>
       <pre>{JSON.stringify(agents, null, 2)}</pre>
+
     </div>
   );
 }
