@@ -1,0 +1,9 @@
+{
+  "name": "user-management-routing",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/user-management-routing/src",
+  "projectType": "library",
+  "tags": ["scope:user-management", "type:feature"],
+  "// targets": "to see all targets run: nx show project user-management-routing --web",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "feature-payment-history",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/features/feature-payment-history/src",
+  "projectType": "library",
+  "tags": ["scope:user-management", "type:feature"],
+  "// targets": "to see all targets run: nx show project feature-payment-history --web",
+  "targets": {}
+}

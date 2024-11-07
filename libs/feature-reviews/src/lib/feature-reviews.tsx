@@ -1,8 +1,8 @@
-import { useCoreData } from '@home-improvement-hub/data';
+import { useReviews } from '@home-improvement-hub/data';
 
 export function FeatureReviews() {
 
-  const { reviews } = useCoreData();
+  const { reviews } = useReviews();
   return (
     <div>
       <h1>Welcome to FeatureReviews!</h1>

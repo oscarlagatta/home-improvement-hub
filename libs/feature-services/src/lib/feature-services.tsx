@@ -1,4 +1,4 @@
-import { useCoreData } from '@home-improvement-hub/data';
+import { useServices } from '@home-improvement-hub/data';
 
 // export function FeatureServices() {
 //
@@ -30,7 +30,7 @@ import {
 
 export function FeatureServices() {
 
-  const { services } = useCoreData();
+  const { services } = useServices();
 
   return (
     <div className="space-y-8">

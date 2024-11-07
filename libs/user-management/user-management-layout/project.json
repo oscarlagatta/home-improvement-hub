@@ -1,0 +1,9 @@
+{
+  "name": "user-management-layout",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/user-management-layout/src",
+  "projectType": "library",
+  "tags": ["scope:user-management", "type:ui"],
+  "// targets": "to see all targets run: nx show project user-management-layout --web",
+  "targets": {}
+}

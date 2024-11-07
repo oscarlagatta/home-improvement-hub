@@ -1,0 +1,9 @@
+{
+  "name": "routing",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/shared-routing/src",
+  "projectType": "library",
+  "tags": ["type:routing", "scope:shared"],
+  "// targets": "to see all targets run: nx show project routing --web",
+  "targets": {}
+}
