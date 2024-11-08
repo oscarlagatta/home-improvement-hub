@@ -62,9 +62,6 @@
       "@home-improvement-hub/ui": [
         "libs/user-management/user-management-ui/src/index.ts"
       ],
-      "@home-improvement-hub/user-list": [
-        "libs/user-profile/libs/user-list/features/feature-user-filter/src/index.ts"
-      ],
       "@home-improvement-hub/user-management-data-access": [
         "libs/user-management/user-management-data-access/src/index.ts"
       ],
@@ -76,21 +73,6 @@
       ],
       "@home-improvement-hub/user-management-routing": [
         "libs/user-management/user-management-routing/src/index.ts"
-      ],
-      "@home-improvement-hub/user-profile-data-access": [
-        "libs/user-profile/user-profile-data-access/src/index.ts"
-      ],
-      "@home-improvement-hub/user-profile-layout": [
-        "libs/user-profile/user-profile-layout/src/index.ts"
-      ],
-      "@home-improvement-hub/user-profile-models": [
-        "libs/user-profile/user-profile-models/src/index.ts"
-      ],
-      "@home-improvement-hub/user-profile-routing": [
-        "libs/user-profile/user-profile-routing/src/index.ts"
-      ],
-      "@home-improvement-hub/user-profile-ui": [
-        "libs/user-profile/user-profile-ui/src/index.ts"
       ],
       "@home-improvement-hub/utils": ["libs/utils/src/index.ts"]
     },
