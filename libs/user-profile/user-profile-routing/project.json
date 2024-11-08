@@ -1,0 +1,9 @@
+{
+  "name": "user-profile-routing",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-profile/user-profile-routing/src",
+  "projectType": "library",
+  "tags": ["scope:user-profile", "type:feature"],
+  "// targets": "to see all targets run: nx show project user-profile-routing --web",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "feature-user-list-table",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/features/user-list/feature-user-list-table/src",
+  "projectType": "library",
+  "tags": ["scope:user-list", "type:feature"],
+  "// targets": "to see all targets run: nx show project feature-user-list-table --web",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "feature-create-user",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/features/user-list/feature-create-user/src",
+  "projectType": "library",
+  "tags": ["scope:user-list", "type:feature"],
+  "// targets": "to see all targets run: nx show project feature-create-user --web",
+  "targets": {}
+}

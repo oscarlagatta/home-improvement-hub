@@ -17,10 +17,10 @@
     "paths": {
       "@home-improvement-hub/data": ["libs/data/src/index.ts"],
       "@home-improvement-hub/feature-admin": [
-        "libs/user-management/features/feature-admin/src/index.ts"
+        "libs/user-management/features/admin/feature-admin/src/index.ts"
       ],
       "@home-improvement-hub/feature-agent-profile": [
-        "libs/user-management/features/feature-agent-profile/src/index.ts"
+        "libs/user-management/features/admin/feature-agent-profile/src/index.ts"
       ],
       "@home-improvement-hub/feature-agents": [
         "libs/feature-agents/src/index.ts"
@@ -28,8 +28,14 @@
       "@home-improvement-hub/feature-bookings": [
         "libs/feature-bookings/src/index.ts"
       ],
+      "@home-improvement-hub/feature-create-user": [
+        "libs/user-management/features/user-list/feature-create-user/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-edit-user": [
+        "libs/user-management/features/user-list/feature-edit-user/src/index.ts"
+      ],
       "@home-improvement-hub/feature-payment-history": [
-        "libs/user-management/features/feature-payment-history/src/index.ts"
+        "libs/user-management/features/admin/feature-payment-history/src/index.ts"
       ],
       "@home-improvement-hub/feature-reviews": [
         "libs/feature-reviews/src/index.ts"
@@ -38,7 +44,10 @@
         "libs/feature-services/src/index.ts"
       ],
       "@home-improvement-hub/feature-subscription-tracker": [
-        "libs/user-management/features/feature-subscription-tracker/src/index.ts"
+        "libs/user-management/features/admin/feature-subscription-tracker/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-user-list-table": [
+        "libs/user-management/features/user-list/feature-user-list-table/src/index.ts"
       ],
       "@home-improvement-hub/models": ["libs/models/src/index.ts"],
       "@home-improvement-hub/routing": [
@@ -53,6 +62,9 @@
       "@home-improvement-hub/ui": [
         "libs/user-management/user-management-ui/src/index.ts"
       ],
+      "@home-improvement-hub/user-list": [
+        "libs/user-profile/libs/user-list/features/feature-user-filter/src/index.ts"
+      ],
       "@home-improvement-hub/user-management-data-access": [
         "libs/user-management/user-management-data-access/src/index.ts"
       ],
@@ -65,8 +77,24 @@
       "@home-improvement-hub/user-management-routing": [
         "libs/user-management/user-management-routing/src/index.ts"
       ],
+      "@home-improvement-hub/user-profile-data-access": [
+        "libs/user-profile/user-profile-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/user-profile-layout": [
+        "libs/user-profile/user-profile-layout/src/index.ts"
+      ],
+      "@home-improvement-hub/user-profile-models": [
+        "libs/user-profile/user-profile-models/src/index.ts"
+      ],
+      "@home-improvement-hub/user-profile-routing": [
+        "libs/user-profile/user-profile-routing/src/index.ts"
+      ],
+      "@home-improvement-hub/user-profile-ui": [
+        "libs/user-profile/user-profile-ui/src/index.ts"
+      ],
       "@home-improvement-hub/utils": ["libs/utils/src/index.ts"]
-    }
+    },
+    "jsx": "react"
   },
   "exclude": ["node_modules", "tmp"]
 }

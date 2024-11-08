@@ -1,0 +1,9 @@
+{
+  "name": "user-profile-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-profile/user-profile-models/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project user-profile-models --web",
+  "targets": {}
+}

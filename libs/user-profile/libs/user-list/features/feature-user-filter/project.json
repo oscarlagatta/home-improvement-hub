@@ -1,0 +1,9 @@
+{
+  "name": "user-list",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-profile/libs/user-list/features/feature-user-filter/src",
+  "projectType": "library",
+  "tags": ["scope:user-list", "type:feature"],
+  "// targets": "to see all targets run: nx show project user-list --web",
+  "targets": {}
+}

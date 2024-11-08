@@ -1,0 +1,9 @@
+{
+  "name": "user-profile-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-profile/user-profile-data-access/src",
+  "projectType": "library",
+  "tags": ["scope:user-profile", "type:data-access"],
+  "// targets": "to see all targets run: nx show project user-profile-data-access --web",
+  "targets": {}
+}
