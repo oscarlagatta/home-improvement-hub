@@ -108,6 +108,16 @@ import type {
   PostServicesData,
   PostServicesError,
   PostServicesResponse,
+  GetUserData,
+  PutUsersByIdData,
+  PutUsersByIdError,
+  PutUsersByIdResponse,
+  DeleteUsersByIdData,
+  DeleteUsersByIdError,
+  DeleteUsersByIdResponse,
+  PostUsersData,
+  PostUsersError,
+  PostUsersResponse,
 } from '../types.gen';
 import {
   client,
@@ -166,6 +176,11 @@ import {
   deleteServicesById,
   getServices,
   postServices,
+  getUser,
+  putUsersById,
+  deleteUsersById,
+  getUsers,
+  postUsers,
 } from '../services.gen';
 import type { AxiosError } from 'axios';
 
@@ -1480,6 +1495,123 @@ export const postServicesMutation = (
   > = {
     mutationFn: async (localOptions) => {
       const { data } = await postServices({
+        ...options,
+        ...localOptions,
+        throwOnError: true,
+      });
+      return data;
+    },
+  };
+  return mutationOptions;
+};
+
+export const getUserQueryKey = (options: Options<GetUserData>) => [
+  createQueryKey('getUser', options),
+];
+
+export const getUserOptions = (options: Options<GetUserData>) => {
+  return queryOptions({
+    queryFn: async ({ queryKey, signal }) => {
+      const { data } = await getUser({
+        ...options,
+        ...queryKey[0],
+        signal,
+        throwOnError: true,
+      });
+      return data;
+    },
+    queryKey: getUserQueryKey(options),
+  });
+};
+
+export const putUsersByIdMutation = (
+  options?: Partial<Options<PutUsersByIdData>>
+) => {
+  const mutationOptions: UseMutationOptions<
+    PutUsersByIdResponse,
+    AxiosError<PutUsersByIdError>,
+    Options<PutUsersByIdData>
+  > = {
+    mutationFn: async (localOptions) => {
+      const { data } = await putUsersById({
+        ...options,
+        ...localOptions,
+        throwOnError: true,
+      });
+      return data;
+    },
+  };
+  return mutationOptions;
+};
+
+export const deleteUsersByIdMutation = (
+  options?: Partial<Options<DeleteUsersByIdData>>
+) => {
+  const mutationOptions: UseMutationOptions<
+    DeleteUsersByIdResponse,
+    AxiosError<DeleteUsersByIdError>,
+    Options<DeleteUsersByIdData>
+  > = {
+    mutationFn: async (localOptions) => {
+      const { data } = await deleteUsersById({
+        ...options,
+        ...localOptions,
+        throwOnError: true,
+      });
+      return data;
+    },
+  };
+  return mutationOptions;
+};
+
+export const getUsersQueryKey = (options?: Options) => [
+  createQueryKey('getUsers', options),
+];
+
+export const getUsersOptions = (options?: Options) => {
+  return queryOptions({
+    queryFn: async ({ queryKey, signal }) => {
+      const { data } = await getUsers({
+        ...options,
+        ...queryKey[0],
+        signal,
+        throwOnError: true,
+      });
+      return data;
+    },
+    queryKey: getUsersQueryKey(options),
+  });
+};
+
+export const postUsersQueryKey = (options: Options<PostUsersData>) => [
+  createQueryKey('postUsers', options),
+];
+
+export const postUsersOptions = (options: Options<PostUsersData>) => {
+  return queryOptions({
+    queryFn: async ({ queryKey, signal }) => {
+      const { data } = await postUsers({
+        ...options,
+        ...queryKey[0],
+        signal,
+        throwOnError: true,
+      });
+      return data;
+    },
+    queryKey: postUsersQueryKey(options),
+  });
+};
+
+export const postUsersMutation = (
+  options?: Partial<Options<PostUsersData>>
+) => {
+  const mutationOptions: UseMutationOptions<
+    PostUsersResponse,
+    AxiosError<PostUsersError>,
+    Options<PostUsersData>
+  > = {
+    mutationFn: async (localOptions) => {
+      const { data } = await postUsers({
         ...options,
         ...localOptions,
         throwOnError: true,

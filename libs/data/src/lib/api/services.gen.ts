@@ -161,6 +161,20 @@ import type {
   PostServicesData,
   PostServicesError,
   PostServicesResponse,
+  GetUserData,
+  GetUserError,
+  GetUserResponse,
+  PutUsersByIdData,
+  PutUsersByIdError,
+  PutUsersByIdResponse,
+  DeleteUsersByIdData,
+  DeleteUsersByIdError,
+  DeleteUsersByIdResponse,
+  GetUsersError,
+  GetUsersResponse,
+  PostUsersData,
+  PostUsersError,
+  PostUsersResponse,
 } from './types.gen';
 
 export const client = createClient(createConfig());
@@ -897,5 +911,70 @@ export const postServices = <ThrowOnError extends boolean = false>(
   >({
     ...options,
     url: '/services',
+  });
+};
+
+export const getUser = <ThrowOnError extends boolean = false>(
+  options: Options<GetUserData, ThrowOnError>
+) => {
+  return (options?.client ?? client).get<
+    GetUserResponse,
+    GetUserError,
+    ThrowOnError
+  >({
+    ...options,
+    url: '/users/{id}',
+  });
+};
+
+export const putUsersById = <ThrowOnError extends boolean = false>(
+  options: Options<PutUsersByIdData, ThrowOnError>
+) => {
+  return (options?.client ?? client).put<
+    PutUsersByIdResponse,
+    PutUsersByIdError,
+    ThrowOnError
+  >({
+    ...options,
+    url: '/users/{id}',
+  });
+};
+
+export const deleteUsersById = <ThrowOnError extends boolean = false>(
+  options: Options<DeleteUsersByIdData, ThrowOnError>
+) => {
+  return (options?.client ?? client).delete<
+    DeleteUsersByIdResponse,
+    DeleteUsersByIdError,
+    ThrowOnError
+  >({
+    ...options,
+    url: '/users/{id}',
+  });
+};
+
+export const getUsers = <ThrowOnError extends boolean = false>(
+  options?: Options<unknown, ThrowOnError>
+) => {
+  return (options?.client ?? client).get<
+    GetUsersResponse,
+    GetUsersError,
+    ThrowOnError
+  >({
+    ...options,
+    url: '/users',
+  });
+};
+
+export const postUsers = <ThrowOnError extends boolean = false>(
+  options: Options<PostUsersData, ThrowOnError>
+) => {
+  return (options?.client ?? client).post<
+    PostUsersResponse,
+    PostUsersError,
+    ThrowOnError
+  >({
+    ...options,
+    url: '/users',
   });
 };
