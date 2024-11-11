@@ -279,6 +279,22 @@ export type ServiceForUpdateDto = {
   description?: string | null;
 };
 
+export type UserDto = {
+  userID?: number;
+  fullName?: string | null;
+  email?: string | null;
+  phoneNumber?: string | null;
+  address?: string | null;
+  city?: string | null;
+  stateOrProvince?: string | null;
+  postalCode?: string | null;
+  country?: string | null;
+  jobTitle?: string | null;
+  bio?: string | null;
+  createdDate?: string;
+  lastUpdatedDate?: string;
+};
+
 export type GetAgentData = {
   path: {
     id: number;
@@ -762,3 +778,46 @@ export type PostServicesData = {
 export type PostServicesResponse = ServiceDto;
 
 export type PostServicesError = unknown;
+
+export type GetUserData = {
+  path: {
+    id: number;
+  };
+};
+
+export type GetUserResponse = UserDto;
+
+export type GetUserError = unknown;
+
+export type PutUsersByIdData = {
+  body: UserDto;
+  path: {
+    id: number;
+  };
+};
+
+export type PutUsersByIdResponse = void;
+
+export type PutUsersByIdError = unknown;
+
+export type DeleteUsersByIdData = {
+  path: {
+    id: number;
+  };
+};
+
+export type DeleteUsersByIdResponse = void;
+
+export type DeleteUsersByIdError = unknown;
+
+export type GetUsersResponse = Array<UserDto>;
+
+export type GetUsersError = unknown;
+
+export type PostUsersData = {
+  body: UserDto;
+};
+
+export type PostUsersResponse = UserDto;
+
+export type PostUsersError = unknown;
