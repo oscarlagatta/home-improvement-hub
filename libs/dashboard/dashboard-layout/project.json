@@ -1,0 +1,9 @@
+{
+  "name": "dashboard-layout",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/dashboard/dashboard-layout/src",
+  "projectType": "library",
+  "tags": ["scope: dashboard", "type : ui"],
+  "// targets": "to see all targets run: nx show project dashboard-layout --web",
+  "targets": {}
+}

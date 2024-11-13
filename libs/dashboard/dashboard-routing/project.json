@@ -1,0 +1,9 @@
+{
+  "name": "dashboard-routing",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/dashboard/dashboard-routing/src",
+  "projectType": "library",
+  "tags": ["scope: dashboard", "type : feature"],
+  "// targets": "to see all targets run: nx show project dashboard-routing --web",
+  "targets": {}
+}
