@@ -84,10 +84,10 @@ export function MainNav({
         Dashboard
       </StyledNavLink>
       <StyledNavLink
-        to="/orders"
+        to="/users"
         className="text-sm font-medium transition-colors hover:text-primary"
       >
-        Orders
+        Users
       </StyledNavLink>
     </nav>
   );

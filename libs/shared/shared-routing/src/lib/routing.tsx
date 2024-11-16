@@ -9,6 +9,8 @@ import React, { Suspense } from 'react';
 import { FeatureAgents } from '@home-improvement-hub/feature-agents';
 import { FeatureReviews } from '@home-improvement-hub/feature-reviews';
 import { FeatureBookings } from '@home-improvement-hub/feature-bookings';
+import FeatureUserListTable
+  from '../../../../user-management/features/user-list/feature-user-list-table/src/lib/feature-user-list-table';
 //import { Layout } from '../../../ui/src/lib/layout';
 
 export const router = createBrowserRouter([
@@ -70,8 +72,8 @@ export const router = createBrowserRouter([
         ],
       },
       {
-        path: 'orders',
-        element: <LayoutOrders />,
+        path: 'users',
+        element: <FeatureUserListTable />,
       },
     ],
   },

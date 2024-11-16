@@ -12,7 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@home-improvement-hub/shadcn';
-import { cn } from '../../../../shadcn/src/libs/util';
+import { cn } from '@home-improvement-hub/shadcn';
 
 export function CalendarDateRangePicker({
   className,
