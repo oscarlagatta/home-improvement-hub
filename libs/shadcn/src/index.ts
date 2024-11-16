@@ -45,5 +45,15 @@ export * from './components/chart';
 export * from './components/checkbox';
 export * from './components/collapsible';
 export * from './components/command';
-export * from './components/context-menu';
+export * from './components/use-is-mobile';
+export * from './components/sidebar';
+export * from './components/header';
 
+export * from './components/context-menu';
+export * from './dashboardComponents/team-switcher';
+export * from './dashboardComponents/user-nav';
+export * from './dashboardComponents/main-nav';
+export * from './dashboardComponents/search';
+export * from './dashboardComponents/recent-sales';
+export * from './dashboardComponents/overview';
+export * from './dashboardComponents/dashboard-nav';

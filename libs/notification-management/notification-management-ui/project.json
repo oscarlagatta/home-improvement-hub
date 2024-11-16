@@ -1,0 +1,9 @@
+{
+  "name": "notification-management-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/notification-management/notification-management-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project notification-management-ui --web",
+  "targets": {}
+}

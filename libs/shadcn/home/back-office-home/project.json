@@ -1,0 +1,9 @@
+{
+  "name": "back-office-home",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shadcn/home/back-office-home/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project back-office-home --web",
+  "targets": {}
+}

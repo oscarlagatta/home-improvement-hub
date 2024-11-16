@@ -1,8 +1,8 @@
-import { Button } from './button';
-import { Search } from '../dashboard/search';
-import { UserNav } from '../dashboard/user-nav';
+import { Search } from '../dashboardComponents/search';
+import { UserNav } from '../dashboardComponents/user-nav';
+import { MainNav } from '../dashboardComponents/main-nav';
 
-export default function Header() {
+export function Header() {
   return (
     <div>
       <div className="md:hidden">
@@ -24,18 +24,10 @@ export default function Header() {
       <div className="hidden flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            {/*<MainNav className="mx-6" />*/}
+            <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />
               <UserNav />
-            </div>
-          </div>
-        </div>
-        <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
-            <div className="flex items-center space-x-2">
-              <Button>Download</Button>
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
-import { AppLayout } from '../../../../libs/shadcn/src/app-layout';
+import AppRouting from '../../../../libs/app-routing/src/lib/app-routing';
+
+// import { BackOfficeHome } from '@home-improvement-hub/back-office-home';
 
 export function App() {
-  return <AppLayout />;
+  return <AppRouting />;
 }
 
 export default App;

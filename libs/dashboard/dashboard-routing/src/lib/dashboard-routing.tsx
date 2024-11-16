@@ -1,15 +1,5 @@
-import styled from 'tailwind';
-
-const StyledDashboardRouting = styled.div`
-  color: pink;
-`;
-
 export function DashboardRouting() {
-  return (
-    <StyledDashboardRouting>
-      <h1>Welcome to DashboardRouting!</h1>
-    </StyledDashboardRouting>
-  );
+  return <h1>Welcome to DashboardRouting!</h1>;
 }
 
 export default DashboardRouting;
