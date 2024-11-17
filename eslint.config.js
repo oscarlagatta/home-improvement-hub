@@ -33,22 +33,19 @@ module.exports = [
                 'scope:shared',
               ],
             },
+
             {
               sourceTag: 'type:data',
               onlyDependOnLibsWithTags: ['type:models', 'scope:shared'],
             },
             { sourceTag: 'type:models', onlyDependOnLibsWithTags: [] },
             {
-              sourceTag: 'type:routing',
-              onlyDependOnLibsWithTags: [
-                'scope:shared',
-                'type:utils',
-                'type:models',
-              ],
-            },
-            {
               sourceTag: 'type:state',
               onlyDependOnLibsWithTags: ['type:models'],
+            },
+            {
+              sourceTag: 'scope:app',
+              onlyDependOnLibsWithTags: ['type:ui', 'type:feature'],
             },
           ],
         },

@@ -1,56 +1,67 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import {
-  Layout,
-  LayoutDashboard,
-  LayoutOrders,
-} from '@home-improvement-hub/shared-ui';
-import { FeatureServices } from '@home-improvement-hub/feature-services';
-import React, { Suspense } from 'react';
-import { FeatureAgents } from '@home-improvement-hub/feature-agents';
-import { FeatureReviews } from '@home-improvement-hub/feature-reviews';
-import { FeatureBookings } from '@home-improvement-hub/feature-bookings';
-import FeatureUserListTable
-  from '../../../../user-management/features/user-list/feature-user-list-table/src/lib/feature-user-list-table';
-//import { Layout } from '../../../ui/src/lib/layout';
+import React, { lazy, Suspense } from 'react';
+
+const Layout = lazy(() =>
+  import('@home-improvement-hub/shared-ui').then((module) => ({
+    default: module.Layout,
+  }))
+);
+
+const FeatureAgents = lazy(() =>
+  import('@home-improvement-hub/feature-agents').then((module) => ({
+    default: module.FeatureAgents,
+  }))
+);
+
+const FeatureBookings = lazy(() =>
+  import('@home-improvement-hub/feature-bookings').then((module) => ({
+    default: module.FeatureBookings,
+  }))
+);
+
+const FeatureReviews = lazy(() =>
+  import('@home-improvement-hub/feature-reviews').then((module) => ({
+    default: module.FeatureReviews,
+  }))
+);
+
+const FeatureUserListTable = lazy(() =>
+  import('@home-improvement-hub/feature-user-list-table').then((module) => ({
+    default: module.FeatureUserListTable,
+  }))
+);
+
+const FeatureServices = lazy(() =>
+  import('@home-improvement-hub/feature-services').then((module) => ({
+    default: module.FeatureServices,
+  }))
+);
+
+const LayoutDashboard = lazy(() =>
+  import('@home-improvement-hub/shared-ui').then((module) => ({
+    default: module.LayoutDashboard,
+  }))
+);
 
 export const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Layout />,
-  //   children: [
-  //     {
-  //       path: "/",
-  //       element: <FeatureServices/>,
-  //     },
-  //     {
-  //       path: "services",
-  //       element:  <FeatureServices/>,
-  //     },
-  //     {
-  //       path: "agents",
-  //       element:  <FeatureAgents/>,
-  //     },
-  //     {
-  //       path: "reviews",
-  //       element:  <FeatureReviews/>,
-  //     },
-  //     {
-  //       path: "bookings",
-  //       element:  <FeatureBookings/>,
-  //     },
-  //   ],
-  // },
-
   {
     path: '/',
-    element: <Layout />,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Layout />
+      </Suspense>
+    ),
     children: [
       {
         path: 'dashboard',
-        element: <LayoutDashboard />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <LayoutDashboard />
+          </Suspense>
+        ),
         children: [
           {
-            path: 'services',
+            path: '/feature-services',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
                 <FeatureServices />
@@ -58,22 +69,38 @@ export const router = createBrowserRouter([
             ),
           },
           {
-            path: 'agents',
-            element: <FeatureAgents />,
+            path: '/feature-agents',
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <FeatureAgents />
+              </Suspense>
+            ),
           },
           {
-            path: 'bookings',
-            element: <FeatureBookings />,
+            path: '/feature-bookings',
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <FeatureBookings />
+              </Suspense>
+            ),
           },
           {
-            path: 'reviews',
-            element: <FeatureReviews />,
+            path: '/feature-reviews',
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <FeatureReviews />
+              </Suspense>
+            ),
           },
         ],
       },
       {
-        path: 'users',
-        element: <FeatureUserListTable />,
+        path: '/feature-users',
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <FeatureUserListTable />
+          </Suspense>
+        ),
       },
     ],
   },
