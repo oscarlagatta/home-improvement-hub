@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@home-improvement-hub/dashboard-page": [
+        "libs/dashboard/dashboard-page/src/index.ts"
+      ],
       "@home-improvement-hub/data": ["libs/data/src/index.ts"],
       "@home-improvement-hub/feature-agents": [
         "libs/feature-agents/src/index.ts"
