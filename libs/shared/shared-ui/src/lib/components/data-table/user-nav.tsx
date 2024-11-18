@@ -2,8 +2,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@home-improvement-hub/shadcn"
-import { Button } from "@home-improvement-hub/shadcn"
+} from '@home-improvement-hub/shadcn';
+import { Button } from '@home-improvement-hub/shadcn';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@home-improvement-hub/shadcn"
+} from '@home-improvement-hub/shadcn';
 
 export function UserNav() {
   return (
@@ -58,5 +58,5 @@ export function UserNav() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

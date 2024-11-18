@@ -19,11 +19,11 @@ interface DataTableRowActionsProps<TData> {
 }
 
 export function DataTableRowActions<TData>({
-                                             row,
-                                             onEdit,
-                                             onDelete,
-                                             onCopy,
-                                           }: DataTableRowActionsProps<TData>) {
+  row,
+  onEdit,
+  onDelete,
+  onCopy,
+}: DataTableRowActionsProps<TData>) {
   const user = userSchema.parse(row.original);
 
   return (

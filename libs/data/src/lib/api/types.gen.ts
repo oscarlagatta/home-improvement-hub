@@ -286,11 +286,11 @@ export type UserDto = {
   phoneNumber: string;
   address: string;
   city: string;
-  stateOrProvince: string ;
+  stateOrProvince: string;
   postalCode: string;
   country: string;
   jobTitle: string;
-  bio: string ;
+  bio: string;
   createdDate: string;
   lastUpdatedDate: string;
 };

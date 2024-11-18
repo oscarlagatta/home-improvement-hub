@@ -28,7 +28,7 @@ export function DataTableToolbar<TData>({
           onChange={(event) => table.setGlobalFilter(event.target.value)}
           className="h-8 w-[150px] lg:w-[350px]"
         />
-                {isFiltered && (
+        {isFiltered && (
           <Button
             variant="ghost"
             onClick={() => {

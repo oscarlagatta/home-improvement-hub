@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from 'zod';
 
 // We're keeping a simple non-relational schema here.
 // IRL, you will have a schema for your data models.
@@ -10,7 +10,7 @@ export const userSchema = z.object({
   // priority: z.string(),
 
   userID: z.number(),
-  fullName: z.string() ,
+  fullName: z.string(),
   email: z.string(),
   phoneNumber: z.string(),
   address: z.string(),
@@ -23,6 +23,6 @@ export const userSchema = z.object({
   createdDate: z.string(),
   lastUpdatedDate: z.string(),
   // label: z.string(),
-})
+});
 
-export type User = z.infer<typeof userSchema>
+export type User = z.infer<typeof userSchema>;

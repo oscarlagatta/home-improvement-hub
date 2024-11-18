@@ -1,13 +1,12 @@
-import { ColumnDef } from "@tanstack/react-table"
-import { Badge } from "@home-improvement-hub/shadcn"
-import { Checkbox } from "@home-improvement-hub/shadcn"
+import { ColumnDef } from '@tanstack/react-table';
+import { Badge } from '@home-improvement-hub/shadcn';
+import { Checkbox } from '@home-improvement-hub/shadcn';
 
-import { labels, priorities, statuses } from "../../data/data"
-import { User } from "../../data/schema"
-import { DataTableColumnHeader } from "./data-table-column-header"
-import { DataTableRowActions } from "./data-table-row-actions"
+import { labels, priorities, statuses } from '../../data/data';
+import { User } from '../../data/schema';
+import { DataTableColumnHeader } from './data-table-column-header';
+import { DataTableRowActions } from './data-table-row-actions';
 import { format } from 'date-fns';
-
 
 export const createColumns = (
   onEdit: (id: number) => void,
@@ -128,9 +127,7 @@ export const createColumns = (
       // <div>{row.getValue('createdDate')}</div>;
       const dateStr = row.getValue('createdDate') as string;
       const date = format(new Date(dateStr), 'dd-MM-yyyy');
-      return (
-        <div>{date}</div>
-      );
+      return <div>{date}</div>;
     },
     enableSorting: true,
     enableHiding: true,
@@ -160,9 +157,6 @@ export const createColumns = (
     ),
   },
 ];
-
-
-
 
 //
 // export const columns: ColumnDef<Task>[] = [

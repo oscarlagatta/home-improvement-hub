@@ -6,10 +6,8 @@ export function FeatureBookings() {
     <div>
       <h1>Welcome to FeatureBookings!</h1>
       <pre>{JSON.stringify(jobs, null, 2)}</pre>
-
     </div>
   );
-
 }
 
 export default FeatureBookings;

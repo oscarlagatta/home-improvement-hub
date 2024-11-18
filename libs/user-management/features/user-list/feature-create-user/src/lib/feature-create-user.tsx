@@ -1,7 +1,7 @@
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { Button } from "@home-improvement-hub/shadcn"
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { Button } from '@home-improvement-hub/shadcn';
 import {
   Form,
   FormControl,
@@ -10,8 +10,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@home-improvement-hub/shadcn"
-import { Input } from "@home-improvement-hub/shadcn"
+} from '@home-improvement-hub/shadcn';
+import { Input } from '@home-improvement-hub/shadcn';
 
 //
 // export function FeatureCreateUser() {
@@ -20,33 +20,30 @@ import { Input } from "@home-improvement-hub/shadcn"
 //   );
 // }
 
-
-
 const formSchema = z.object({
   fullName: z.string().min(2, {
-    message: "Full name must be at least 10 characters.",
+    message: 'Full name must be at least 10 characters.',
   }),
   email: z.string().min(2, {
-    message: "must be valid email address.",
+    message: 'must be valid email address.',
   }),
-})
+});
 
 export function FeatureCreateUser() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      fullName: "",
-      email: ""
+      fullName: '',
+      email: '',
     },
-  })
+  });
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values)
+    console.log(values);
   }
-
 
   return (
     <Form {...form}>
@@ -88,11 +85,7 @@ export function FeatureCreateUser() {
         <Button type="submit">Submit</Button>
       </form>
     </Form>
-  )
-
-
-
-
+  );
 }
 
 export default FeatureCreateUser;
