@@ -1,0 +1,9 @@
+{
+  "name": "job-management-utility",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/job-management/job-management-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project job-management-utility --web",
+  "targets": {}
+}

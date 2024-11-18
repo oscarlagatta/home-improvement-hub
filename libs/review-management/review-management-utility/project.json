@@ -1,0 +1,9 @@
+{
+  "name": "review-management-data-utility",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/review-management/review-management-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project review-management-data-utility --web",
+  "targets": {}
+}

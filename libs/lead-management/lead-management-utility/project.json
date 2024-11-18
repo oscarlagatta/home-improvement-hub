@@ -1,0 +1,9 @@
+{
+  "name": "lead-management-utility",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/lead-management/lead-management-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project lead-management-utility --web",
+  "targets": {}
+}

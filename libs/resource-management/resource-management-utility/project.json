@@ -1,0 +1,9 @@
+{
+  "name": "resource-management-utility",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/resource-management/resource-management-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project resource-management-utility --web",
+  "targets": {}
+}

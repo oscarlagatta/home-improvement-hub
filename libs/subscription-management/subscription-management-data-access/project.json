@@ -1,0 +1,9 @@
+{
+  "name": "subscription-management-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/subscription-management/subscription-management-data-access/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project subscription-management-data-access --web",
+  "targets": {}
+}

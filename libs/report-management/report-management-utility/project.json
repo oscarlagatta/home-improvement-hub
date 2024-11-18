@@ -1,0 +1,9 @@
+{
+  "name": "report-management-utility",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/report-management/report-management-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project report-management-utility --web",
+  "targets": {}
+}
