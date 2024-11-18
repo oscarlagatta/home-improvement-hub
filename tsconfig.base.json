@@ -24,6 +24,9 @@
       "@home-improvement-hub/dashboard-ui": [
         "libs/dashboard/dashboard-ui/src/index.ts"
       ],
+      "@home-improvement-hub/dashboard-utility": [
+        "libs/dashboard/dashboard-utility/src/index.ts"
+      ],
       "@home-improvement-hub/data": ["libs/data/src/index.ts"],
       "@home-improvement-hub/feature-agents": [
         "libs/feature-agents/src/index.ts"
