@@ -52,10 +52,73 @@
       "@home-improvement-hub/feature-services": [
         "libs/feature-services/src/index.ts"
       ],
+      "@home-improvement-hub/job-management-data-access": [
+        "libs/job-management/job-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/job-management-ui": [
+        "libs/job-management/job-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/job-management-utility": [
+        "libs/job-management/job-management-utility/src/index.ts"
+      ],
+      "@home-improvement-hub/lead-management-data-access": [
+        "libs/lead-management/lead-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/lead-management-ui": [
+        "libs/lead-management/lead-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/lead-management-utility": [
+        "libs/lead-management/lead-management-utility/src/index.ts"
+      ],
       "@home-improvement-hub/models": ["libs/models/src/index.ts"],
+      "@home-improvement-hub/notification-management-data-access": [
+        "libs/notification-management/notification-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/notification-management-ui": [
+        "libs/notification-management/notification-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/notification-management-utility": [
+        "libs/notification-management/notification-management-utility/src/index.ts"
+      ],
+      "@home-improvement-hub/report-management-data-access": [
+        "libs/report-management/report-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/report-management-ui": [
+        "libs/report-management/report-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/report-management-utility": [
+        "libs/report-management/report-management-utility/src/index.ts"
+      ],
+      "@home-improvement-hub/resource-management-data-access": [
+        "libs/resource-management/resource-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/resource-management-ui": [
+        "libs/resource-management/resource-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/resource-management-utility": [
+        "libs/resource-management/resource-management-utility/src/index.ts"
+      ],
+      "@home-improvement-hub/review-management-data-access": [
+        "libs/review-management/review-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/review-management-data-utility": [
+        "libs/review-management/review-management-utility/src/index.ts"
+      ],
+      "@home-improvement-hub/review-management-ui": [
+        "libs/review-management/review-management-ui/src/index.ts"
+      ],
       "@home-improvement-hub/routing": ["libs/routing/src/index.ts"],
       "@home-improvement-hub/shadcn": ["libs/shadcn/src/index.ts"],
       "@home-improvement-hub/state": ["libs/state/src/index.ts"],
+      "@home-improvement-hub/subscription-management-data-access": [
+        "libs/subscription-management/subscription-management-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/subscription-management-ui": [
+        "libs/subscription-management/subscription-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/subscription-management-utility": [
+        "libs/subscription-management/subscription-management-utility/src/index.ts"
+      ],
       "@home-improvement-hub/ui": ["libs/ui/src/index.ts"],
       "@home-improvement-hub/utils": ["libs/utils/src/index.ts"]
     }
