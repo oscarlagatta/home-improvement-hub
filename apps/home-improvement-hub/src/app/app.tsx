@@ -1,7 +1,9 @@
-import { AppRouting } from '@home-improvement-hub/shared-routing';
-
 export function App() {
-  return <AppRouting />;
+  return (
+    <div>
+      <h1>Hello App</h1>
+    </div>
+  );
 }
 
 export default App;

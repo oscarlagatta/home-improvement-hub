@@ -1,18 +1,67 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { TabsList, TabsTrigger } from '@home-improvement-hub/shadcn';
 
-export default function DashboardNav() {
+export function MainNav({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLElement>) {
   return (
-    <TabsList defaultValue="overview">
-      <Link to="/dashboard/overview">
-        <TabsTrigger value="overview">Overview</TabsTrigger>
+    <nav className="flex items-center gap-3">
+      <Link
+        to="/home"
+        className="text-sm font-medium transition-colors hover:text-primary"
+      >
+        Home
       </Link>
-      <Link to="/dashboard/analytics">
-        <TabsTrigger value="analytics">Analytics</TabsTrigger>
+      <Link
+        to="/dashboard"
+        className="text-sm font-medium transition-colors hover:text-primary"
+      >
+        DashBoard
       </Link>
-      <Link to="/dashboard/reports">
-        <TabsTrigger value="reports">Reports</TabsTrigger>
+      <Link
+        to="/user"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Users
       </Link>
-    </TabsList>
+      <Link
+        to="/subscription"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Subscription
+      </Link>
+      <Link
+        to="/job"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Job
+      </Link>
+
+      <Link
+        to="/report"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Report
+      </Link>
+      <Link
+        to="/review"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Reviews
+      </Link>
+      <Link
+        to="/notification"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Notification
+      </Link>
+      <Link
+        to="/resource"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Resource
+      </Link>
+    </nav>
   );
 }
