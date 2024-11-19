@@ -15,6 +15,18 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@home-improvement-hub/dashboard-data-access": [
+        "libs/dashboard/dashboard-data-access/src/index.ts"
+      ],
+      "@home-improvement-hub/dashboard-models": [
+        "libs/dashboard/dashboard-models/src/index.ts"
+      ],
+      "@home-improvement-hub/dashboard-ui": [
+        "libs/dashboard/dashboard-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/dashboard-utility": [
+        "libs/dashboard/dashboard-utility/src/index.ts"
+      ],
       "@home-improvement-hub/data": ["libs/data/src/index.ts"],
       "@home-improvement-hub/feature-admin": [
         "libs/user-management/features/admin/feature-admin/src/index.ts"
@@ -24,6 +36,9 @@
       ],
       "@home-improvement-hub/feature-agents": [
         "libs/feature-agents/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-analytics": [
+        "libs/dashboard/features/feature-analytics/src/index.ts"
       ],
       "@home-improvement-hub/feature-bookings": [
         "libs/feature-bookings/src/index.ts"
