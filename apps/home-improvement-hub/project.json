@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/home-improvement-hub/src",
   "projectType": "application",
-  "tags": [],
+  "tags": ["scope:home-improvement-hub", "type:app"],
   "// targets": "to see all targets run: nx show project home-improvement-hub --web",
   "targets": {}
 }

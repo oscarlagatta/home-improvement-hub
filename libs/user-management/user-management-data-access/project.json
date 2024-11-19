@@ -1,0 +1,9 @@
+{
+  "name": "user-management-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/user-management-data-access/src",
+  "projectType": "library",
+  "tags": ["scope:user-management", "type:data-access"],
+  "// targets": "to see all targets run: nx show project user-management-data-access --web",
+  "targets": {}
+}

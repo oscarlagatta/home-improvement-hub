@@ -280,19 +280,19 @@ export type ServiceForUpdateDto = {
 };
 
 export type UserDto = {
-  userID?: number;
-  fullName?: string | null;
-  email?: string | null;
-  phoneNumber?: string | null;
-  address?: string | null;
-  city?: string | null;
-  stateOrProvince?: string | null;
-  postalCode?: string | null;
-  country?: string | null;
-  jobTitle?: string | null;
-  bio?: string | null;
-  createdDate?: string;
-  lastUpdatedDate?: string;
+  userID: number;
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  address: string;
+  city: string;
+  stateOrProvince: string;
+  postalCode: string;
+  country: string;
+  jobTitle: string;
+  bio: string;
+  createdDate: string;
+  lastUpdatedDate: string;
 };
 
 export type GetAgentData = {

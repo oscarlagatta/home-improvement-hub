@@ -1,6 +1,4 @@
 import { useAgents } from '@home-improvement-hub/data';
-
-
 export function FeatureAgents() {
   const { agents } = useAgents();
   return (
@@ -10,4 +8,3 @@ export function FeatureAgents() {
     </div>
   );
 }
-

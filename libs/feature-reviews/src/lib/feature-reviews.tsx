@@ -1,14 +1,12 @@
-import styled from 'tailwind';
-
-const StyledFeatureReviews = styled.div`
-  color: pink;
-`;
+import { useReviews } from '@home-improvement-hub/data';
 
 export function FeatureReviews() {
+  const { reviews } = useReviews();
   return (
-    <StyledFeatureReviews>
+    <div>
       <h1>Welcome to FeatureReviews!</h1>
-    </StyledFeatureReviews>
+      <pre>{JSON.stringify(reviews, null, 2)}</pre>
+    </div>
   );
 }
 

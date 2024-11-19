@@ -1,14 +1,12 @@
-import styled from 'tailwind';
-
-const StyledFeatureBookings = styled.div`
-  color: pink;
-`;
+import { useJobs } from '@home-improvement-hub/data';
 
 export function FeatureBookings() {
+  const { jobs } = useJobs();
   return (
-    <StyledFeatureBookings>
+    <div>
       <h1>Welcome to FeatureBookings!</h1>
-    </StyledFeatureBookings>
+      <pre>{JSON.stringify(jobs, null, 2)}</pre>
+    </div>
   );
 }
 
