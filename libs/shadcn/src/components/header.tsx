@@ -1,6 +1,6 @@
-import { MainNav } from '../../../dashboard/dashboard-ui/src/lib/main-nav';
-import { Search } from '../../../dashboard/dashboard-ui/src/lib/search';
-import { UserNav } from '../../../dashboard/dashboard-ui/src/lib/user-nav';
+import { MainNav } from '@home-improvement-hub/dashboard-ui';
+import { Search } from '@home-improvement-hub/dashboard-ui';
+import { UserNav } from '@home-improvement-hub/dashboard-ui';
 
 export function Header() {
   return (

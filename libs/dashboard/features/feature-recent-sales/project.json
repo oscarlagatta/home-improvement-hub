@@ -3,7 +3,7 @@
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/dashboard/features/feature-recent-sales/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope: dashboard", "type:feature"],
   "// targets": "to see all targets run: nx show project feature-recent-sales --web",
   "targets": {}
 }

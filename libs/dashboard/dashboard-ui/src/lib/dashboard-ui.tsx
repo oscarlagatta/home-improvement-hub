@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Button, Tabs } from '@home-improvement-hub/shadcn';
-import DashboardNav from './dashboard-nav';
+import DashboardNav from '../components/dashboard-nav';
 
 export function DashboardUi() {
   return (

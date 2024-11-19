@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/dashboard/dashboard-ui/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:dashboard", "type:ui"],
   "// targets": "to see all targets run: nx show project dashboard-ui --web",
   "targets": {}
 }
