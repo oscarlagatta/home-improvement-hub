@@ -78,13 +78,13 @@ export function MainNav({
       {/*</StyledNavLink>*/}
 
       <StyledNavLink
-        to="/dashboard"
+        to="dashboard"
         className="text-sm font-medium transition-colors hover:text-primary"
       >
         Dashboard
       </StyledNavLink>
       <StyledNavLink
-        to="/users"
+        to="feature-users"
         className="text-sm font-medium transition-colors hover:text-primary"
       >
         Users

@@ -1,15 +1,8 @@
 import { cn } from '@home-improvement-hub/shadcn';
 import { Button } from '@home-improvement-hub/shadcn';
-// import {
-//   ChartBarSquareIcon,
-//   ArrowTrendingUpIcon,
-//   ClipboardDocumentIcon,
-// } from '@heroicons/react/24/solid';
 import { useState } from 'react';
-
 export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
-
   return (
     <aside
       className={cn(
@@ -24,30 +17,9 @@ export function Sidebar() {
       >
         {isCollapsed ? 'Expand' : 'Collapse'}
       </Button>
-
-      {/* Navigation Items */}
-      {/*<nav className="space-y-4">*/}
-      {/*  <NavItem*/}
-      {/*    label="Scorecard Dashboard"*/}
-      {/*    icon={<ChartBarSquareIcon className="w-6 h-6" />}*/}
-      {/*    isCollapsed={isCollapsed}*/}
-      {/*  />*/}
-      {/*  <NavItem*/}
-      {/*    label="Performance Metrics"*/}
-      {/*    icon={<ArrowTrendingUpIcon className="w-6 h-6" />}*/}
-      {/*    isCollapsed={isCollapsed}*/}
-      {/*  />*/}
-      {/*  <NavItem*/}
-      {/*    label="Reports"*/}
-      {/*    icon={<ClipboardDocumentIcon className="w-6 h-6" />}*/}
-      {/*    isCollapsed={isCollapsed}*/}
-      {/*  />*/}
-      {/*</nav>*/}
     </aside>
   );
 }
-
-// NavItem Component
 function NavItem({
   label,
   icon,

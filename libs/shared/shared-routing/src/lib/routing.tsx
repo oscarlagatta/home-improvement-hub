@@ -61,7 +61,7 @@ export const router = createBrowserRouter([
         ),
         children: [
           {
-            path: '/feature-services',
+            path: 'feature-services',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
                 <FeatureServices />
@@ -69,7 +69,7 @@ export const router = createBrowserRouter([
             ),
           },
           {
-            path: '/feature-agents',
+            path: 'feature-agents',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
                 <FeatureAgents />
@@ -77,7 +77,7 @@ export const router = createBrowserRouter([
             ),
           },
           {
-            path: '/feature-bookings',
+            path: 'feature-bookings',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
                 <FeatureBookings />
@@ -85,7 +85,7 @@ export const router = createBrowserRouter([
             ),
           },
           {
-            path: '/feature-reviews',
+            path: 'feature-reviews',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
                 <FeatureReviews />
@@ -95,7 +95,7 @@ export const router = createBrowserRouter([
         ],
       },
       {
-        path: '/feature-users',
+        path: 'feature-users',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <FeatureUserListTable />
@@ -109,3 +109,5 @@ export const router = createBrowserRouter([
 export const AppRoutes = () => {
   return <RouterProvider router={router} />;
 };
+
+export default AppRoutes;

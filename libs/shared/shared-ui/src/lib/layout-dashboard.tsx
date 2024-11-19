@@ -86,15 +86,15 @@ export function LayoutDashboard() {
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
-              <Tab onClick={() => navigate('services')}>Services</Tab>
-              <Tab onClick={() => navigate('agents')}>Agents</Tab>
+              <Tab onClick={() => navigate('feature-services')}>Services</Tab>
+              <Tab onClick={() => navigate('feature-agents')}>Agents</Tab>
               <TabsTrigger
                 value="bookings"
-                onClick={() => navigate('bookings')}
+                onClick={() => navigate('feature-bookings')}
               >
                 Bookings
               </TabsTrigger>
-              <TabsTrigger value="reviews" onClick={() => navigate('reviews')}>
+              <TabsTrigger value="reviews" onClick={() => navigate('feature-reviews')}>
                 Reviews
               </TabsTrigger>
             </TabsList>

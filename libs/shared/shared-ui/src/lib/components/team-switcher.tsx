@@ -46,6 +46,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@home-improvement-hub/shadcn';
+import type { DialogProps } from '@radix-ui/react-dialog';
 
 const groups = [
   {
@@ -78,7 +79,8 @@ type PopoverTriggerProps = React.ComponentPropsWithoutRef<
   typeof PopoverTrigger
 >;
 
-interface TeamSwitcherProps extends PopoverTriggerProps {}
+// interface TeamSwitcherProps extends PopoverTriggerProps {}
+export type TeamSwitcherProps = PopoverTriggerProps;
 
 export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   const [open, setOpen] = React.useState(false);

@@ -10,8 +10,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@home-improvement-hub/shadcn';
-import { FeatureCreateUser } from '@home-improvement-hub/feature-create-user';
-
+import { FeatureCreateUser } from './pages/feature-create-user';
 export function FeatureUserListTable() {
   const { userList, isLoading } = useUsers(); //data from api
 
@@ -34,7 +33,6 @@ export function FeatureUserListTable() {
   };
   const handleDelete = (id: number) => {
     setUsers((users ?? []).filter((user: User) => user.userID !== id));
-    //console.log(id);
     return null;
   };
 

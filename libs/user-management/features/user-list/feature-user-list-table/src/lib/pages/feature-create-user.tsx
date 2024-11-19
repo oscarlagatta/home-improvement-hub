@@ -13,13 +13,6 @@ import {
 } from '@home-improvement-hub/shadcn';
 import { Input } from '@home-improvement-hub/shadcn';
 
-//
-// export function FeatureCreateUser() {
-//   return (
-//       <h1>Welcome to Feature Create User!</h1>
-//   );
-// }
-
 const formSchema = z.object({
   fullName: z.string().min(2, {
     message: 'Full name must be at least 10 characters.',
@@ -38,7 +31,6 @@ export function FeatureCreateUser() {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
