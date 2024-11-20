@@ -1,10 +1,7 @@
-export function App() {
-  return (
-    <div>
-      <h1>Welcome to App</h1>
-    </div>
-  );
+import { AppRoutes } from '@home-improvement-hub/routing';
 
+export function App() {
+  return <AppRoutes />;
 }
 
 export default App;

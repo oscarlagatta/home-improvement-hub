@@ -2,7 +2,6 @@ import * as React from 'react';
 import { CheckIcon, PlusCircledIcon } from '@radix-ui/react-icons';
 import { Column } from '@tanstack/react-table';
 
-import { cn } from '@home-improvement-hub/shadcn';
 import {
   Badge,
   Button,
@@ -18,6 +17,7 @@ import {
   PopoverTrigger,
   Separator,
 } from '@home-improvement-hub/shadcn';
+import { cn } from '../../../../../../shadcn/src/libs/util';
 
 interface DataTableFacetedFilterProps<TData, TValue> {
   column?: Column<TData, TValue>;

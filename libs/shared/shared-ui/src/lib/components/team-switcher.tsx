@@ -1,19 +1,13 @@
-'use client';
-
 import * as React from 'react';
-import {
-  CaretSortIcon,
-  CheckIcon,
-  PlusCircledIcon,
-} from '@radix-ui/react-icons';
+import { Check, ChevronsUpDown, PlusCircle } from 'lucide-react';
 
-import { cn } from '@home-improvement-hub/shadcn';
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from '@home-improvement-hub/shadcn';
 import { Button } from '@home-improvement-hub/shadcn';
+import { cn } from '../../../../../shadcn/src/libs/util';
 import {
   Command,
   CommandEmpty,
@@ -46,7 +40,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@home-improvement-hub/shadcn';
-import type { DialogProps } from '@radix-ui/react-dialog';
 
 const groups = [
   {
@@ -79,10 +72,9 @@ type PopoverTriggerProps = React.ComponentPropsWithoutRef<
   typeof PopoverTrigger
 >;
 
-// interface TeamSwitcherProps extends PopoverTriggerProps {}
-export type TeamSwitcherProps = PopoverTriggerProps;
+type TeamSwitcherProps = PopoverTriggerProps;
 
-export default function TeamSwitcher({ className }: TeamSwitcherProps) {
+export function TeamSwitcher({ className }: TeamSwitcherProps) {
   const [open, setOpen] = React.useState(false);
   const [showNewTeamDialog, setShowNewTeamDialog] = React.useState(false);
   const [selectedTeam, setSelectedTeam] = React.useState<Team>(
@@ -109,7 +101,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
               <AvatarFallback>SC</AvatarFallback>
             </Avatar>
             {selectedTeam.label}
-            <CaretSortIcon className="ml-auto h-4 w-4 shrink-0 opacity-50" />
+            <ChevronsUpDown className="ml-auto opacity-50" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-[200px] p-0">
@@ -137,9 +129,9 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                         <AvatarFallback>SC</AvatarFallback>
                       </Avatar>
                       {team.label}
-                      <CheckIcon
+                      <Check
                         className={cn(
-                          'ml-auto h-4 w-4',
+                          'ml-auto',
                           selectedTeam.value === team.value
                             ? 'opacity-100'
                             : 'opacity-0'
@@ -160,7 +152,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                       setShowNewTeamDialog(true);
                     }}
                   >
-                    <PlusCircledIcon className="mr-2 h-5 w-5" />
+                    <PlusCircle className="h-5 w-5" />
                     Create Team
                   </CommandItem>
                 </DialogTrigger>

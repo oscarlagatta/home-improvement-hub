@@ -3,7 +3,7 @@
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/dashboard/features/feature-overview/src",
   "projectType": "library",
-  "tags": ["scope: dashboard", "type:feature"],
+  "tags": [],
   "// targets": "to see all targets run: nx show project feature-overview --web",
   "targets": {}
 }

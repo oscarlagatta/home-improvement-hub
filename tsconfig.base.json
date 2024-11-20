@@ -49,8 +49,14 @@
       "@home-improvement-hub/feature-edit-user": [
         "libs/user-management/features/user-list/feature-edit-user/src/index.ts"
       ],
+      "@home-improvement-hub/feature-overview": [
+        "libs/dashboard/features/feature-overview/src/index.ts"
+      ],
       "@home-improvement-hub/feature-payment-history": [
         "libs/user-management/features/admin/feature-payment-history/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-reports": [
+        "libs/dashboard/features/feature-reports/src/index.ts"
       ],
       "@home-improvement-hub/feature-reviews": [
         "libs/feature-reviews/src/index.ts"

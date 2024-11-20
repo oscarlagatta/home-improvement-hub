@@ -7,39 +7,32 @@ const Layout = lazy(() =>
   }))
 );
 
-const FeatureAgents = lazy(() =>
-  import('@home-improvement-hub/feature-agents').then((module) => ({
-    default: module.FeatureAgents,
+const DashboardUi = lazy(() =>
+  import('@home-improvement-hub/dashboard-ui').then((module) => ({
+    default: module.DashboardUi,
+  }))
+);
+const FeatureOverview = lazy(() =>
+  import('@home-improvement-hub/feature-overview').then((module) => ({
+    default: module.FeatureOverview,
   }))
 );
 
-const FeatureBookings = lazy(() =>
-  import('@home-improvement-hub/feature-bookings').then((module) => ({
-    default: module.FeatureBookings,
+const FeatureAnalytics = lazy(() =>
+  import('@home-improvement-hub/feature-analytics').then((module) => ({
+    default: module.FeatureAnalytics,
   }))
 );
 
-const FeatureReviews = lazy(() =>
-  import('@home-improvement-hub/feature-reviews').then((module) => ({
-    default: module.FeatureReviews,
+const FeatureReports = lazy(() =>
+  import('@home-improvement-hub/feature-reports').then((module) => ({
+    default: module.FeatureReports,
   }))
 );
 
 const FeatureUserListTable = lazy(() =>
   import('@home-improvement-hub/feature-user-list-table').then((module) => ({
     default: module.FeatureUserListTable,
-  }))
-);
-
-const FeatureServices = lazy(() =>
-  import('@home-improvement-hub/feature-services').then((module) => ({
-    default: module.FeatureServices,
-  }))
-);
-
-const LayoutDashboard = lazy(() =>
-  import('@home-improvement-hub/shared-ui').then((module) => ({
-    default: module.LayoutDashboard,
   }))
 );
 
@@ -53,49 +46,49 @@ export const router = createBrowserRouter([
     ),
     children: [
       {
-        path: 'dashboard',
+        path: '/dashboard',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
-            <LayoutDashboard />
+            <DashboardUi />
           </Suspense>
         ),
         children: [
           {
-            path: 'feature-services',
+            index: true,
             element: (
               <Suspense fallback={<div>Loading...</div>}>
-                <FeatureServices />
+                <FeatureOverview />
               </Suspense>
             ),
           },
           {
-            path: 'feature-agents',
+            path: '/dashboard/overview',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
-                <FeatureAgents />
+                <FeatureOverview />
               </Suspense>
             ),
           },
           {
-            path: 'feature-bookings',
+            path: '/dashboard/analytics',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
-                <FeatureBookings />
+                <FeatureAnalytics />
               </Suspense>
             ),
           },
           {
-            path: 'feature-reviews',
+            path: '/dashboard/reports',
             element: (
               <Suspense fallback={<div>Loading...</div>}>
-                <FeatureReviews />
+                <FeatureReports />
               </Suspense>
             ),
           },
         ],
       },
       {
-        path: 'feature-users',
+        path: '/user',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <FeatureUserListTable />
@@ -109,5 +102,3 @@ export const router = createBrowserRouter([
 export const AppRoutes = () => {
   return <RouterProvider router={router} />;
 };
-
-export default AppRoutes;

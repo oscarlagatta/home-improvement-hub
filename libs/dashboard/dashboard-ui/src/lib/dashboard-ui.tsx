@@ -15,6 +15,7 @@ export function DashboardUi() {
       </div>
       <Tabs defaultValue="overview" className="space-y-4">
         <DashboardNav />
+
         <main>
           <Outlet />
         </main>

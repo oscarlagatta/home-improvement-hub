@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { User } from '@home-improvement-hub/shared-ui';
 import { createColumns } from '@home-improvement-hub/shared-ui';
 import { useUsers } from '@home-improvement-hub/data';
-import { UserNav } from '@home-improvement-hub/shared-ui';
+import { UserNav } from '../../../../../../shared/shared-ui/src/lib/components/data-table/user-nav';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@home-improvement-hub/shadcn';
 import { FeatureCreateUser } from './pages/feature-create-user';
+
 export function FeatureUserListTable() {
   const { userList, isLoading } = useUsers(); //data from api
 
