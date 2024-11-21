@@ -13,13 +13,13 @@ import {
   DropdownMenuSeparator,
 } from '@home-improvement-hub/shadcn';
 
-interface DataTableViewOptionsProps<TData> {
+interface UsersDataTableViewOptionsProps<TData> {
   table: Table<TData>;
 }
 
-export function DataTableViewOptions<TData>({
+export function UsersDataTableViewOptions<TData>({
   table,
-}: DataTableViewOptionsProps<TData>) {
+}: UsersDataTableViewOptionsProps<TData>) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

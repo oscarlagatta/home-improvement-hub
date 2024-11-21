@@ -1,51 +1,15 @@
 import { ColumnDef } from '@tanstack/react-table';
-import { Badge } from '@home-improvement-hub/shadcn';
-import { Checkbox } from '@home-improvement-hub/shadcn';
 
-import { labels, priorities, statuses } from '../../data/data';
 import { User } from '../../data/schema';
-import { DataTableColumnHeader } from './data-table-column-header';
-import { DataTableRowActions } from './data-table-row-actions';
+import { DataTableColumnHeader } from '../data-table/data-table-column-header';
+import { DataTableRowActions } from '../data-table/data-table-row-actions';
 import { format } from 'date-fns';
 
-export const createColumns = (
+export const UsersCreateColumns = (
   onEdit: (id: number) => void,
   onDelete: (id: number) => void,
   onCopy: (id: number) => void
 ): ColumnDef<User>[] => [
-  // {
-  //   id: 'select',
-  //   header: ({ table }) => (
-  //     <Checkbox
-  //       checked={
-  //         table.getIsAllPageRowsSelected() ||
-  //         (table.getIsSomePageRowsSelected() && 'indeterminate')
-  //       }
-  //       onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-  //       aria-label="Select all"
-  //       className="translate-y-[2px]"
-  //     />
-  //   ),
-  //   cell: ({ row }) => (
-  //     <Checkbox
-  //       checked={row.getIsSelected()}
-  //       onCheckedChange={(value) => row.toggleSelected(!!value)}
-  //       aria-label="Select row"
-  //       className="translate-y-[2px]"
-  //     />
-  //   ),
-  //   enableSorting: false,
-  //   enableHiding: false,
-  // },
-  // {
-  //   accessorKey: 'userID',
-  //   header: ({ column }) => (
-  //     <DataTableColumnHeader column={column} title="User Id" />
-  //   ),
-  //   cell: ({ row }) => <div className="w-[80px]">{row.getValue('userID')}</div>,
-  //   enableSorting: false,
-  //   enableHiding: false,
-  // },
   {
     accessorKey: 'fullName',
     header: ({ column }) => (
@@ -106,6 +70,15 @@ export const createColumns = (
       <DataTableColumnHeader column={column} title="Post Code" />
     ),
     cell: ({ row }) => <div>{row.getValue('postalCode')}</div>,
+    enableSorting: true,
+    enableHiding: true,
+  },
+  {
+    accessorKey: 'country',
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Country" />
+    ),
+    cell: ({ row }) => <div>{row.getValue('country')}</div>,
     enableSorting: true,
     enableHiding: true,
   },

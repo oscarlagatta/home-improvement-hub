@@ -7,13 +7,13 @@ import { SidebarProvider } from './context/sidebar-context';
 
 export const Layout: FC = () => {
   return (
-    <div className="w-screen  h-screen flex flex-col">
+    <div>
       <Header />
-      <div className="flex flex-1">
+      <div >
         <SidebarProvider>
           <Sidebar />
         </SidebarProvider>
-        <main className="flex-1 p-4 bg-gray-50">
+        <main>
           <Outlet />
         </main>
       </div>

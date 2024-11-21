@@ -23,20 +23,22 @@ import {
   TableRow,
 } from '@home-improvement-hub/shadcn';
 
-import { DataTablePagination } from './data-table-pagination';
-import { DataTableToolbar } from './data-table-toolbar';
-import { useState } from 'react';
+import { DataTablePagination } from '../data-table/data-table-pagination';
+import { UsersDataTableToolbar } from './users-data-table-toolbar';
+import { ReactNode, useState } from 'react';
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   handleDelete: (id: number) => void;
+  children: ReactNode
 }
 
-export function DataTable<TData, TValue>({
+export function UsersDataTable<TData, TValue>({
   columns,
   data,
   handleDelete,
+  children
 }: DataTableProps<TData, TValue>) {
   const [rowSelection, setRowSelection] = React.useState({});
   const [columnVisibility, setColumnVisibility] =
@@ -70,7 +72,9 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="space-y-4">
-      <DataTableToolbar table={table} />
+      <UsersDataTableToolbar table={table} >
+        {children}
+      </UsersDataTableToolbar>
       <div className="rounded-md border">
         <Table>
           <TableHeader>
