@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { User } from '@home-improvement-hub/shared-ui';
 import { createColumns } from '@home-improvement-hub/shared-ui';
 import { useUsers } from '@home-improvement-hub/data';
-import { UserNav } from '../../../../../../shared/shared-ui/src/lib/components/data-table/user-nav';
 import {
   Popover,
   PopoverContent,
@@ -56,9 +55,7 @@ export function FeatureUserListTable() {
           </Popover>
         </div>
 
-        <div className="flex items-center space-x-2">
-          <UserNav />
-        </div>
+        <div className="flex items-center space-x-2"></div>
       </div>
       <DataTable
         data={users ?? []}
