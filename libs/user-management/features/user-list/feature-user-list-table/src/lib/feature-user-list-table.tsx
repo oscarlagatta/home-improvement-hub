@@ -1,6 +1,6 @@
 import { DataTable } from '@home-improvement-hub/shared-ui';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { User } from '@home-improvement-hub/shared-ui';
 import { createColumns } from '@home-improvement-hub/shared-ui';
 import { useUsers } from '@home-improvement-hub/data';
@@ -16,7 +16,7 @@ export function FeatureUserListTable() {
 
   const [users, setUsers] = useState<User[]>();
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   useEffect(() => {
     setUsers(userList);
   }, [userList]);
@@ -25,7 +25,7 @@ export function FeatureUserListTable() {
 
   const handleEdit = (id: number) => {
     console.log('handleEdit', id);
-    navigate(`edit/${id}`);
+    /// navigate(`edit/${id}`);
   };
   const handleCopy = (id: number) => {
     console.log(id);

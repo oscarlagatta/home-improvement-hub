@@ -21,9 +21,6 @@
       "@home-improvement-hub/dashboard-models": [
         "libs/dashboard/dashboard-models/src/index.ts"
       ],
-      "@home-improvement-hub/dashboard-ui": [
-        "libs/dashboard/dashboard-ui/src/index.ts"
-      ],
       "@home-improvement-hub/dashboard-utility": [
         "libs/dashboard/dashboard-utility/src/index.ts"
       ],

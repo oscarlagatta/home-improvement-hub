@@ -1,32 +1,17 @@
-import {
-  Outlet,
-  useNavigate,
-  useResolvedPath,
-  useMatch,
-} from 'react-router-dom';
-
 import { ReactNode } from 'react';
 
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-  Button,
   Tabs,
   TabsContent,
   TabsList,
-  TabsTrigger,
 } from '@home-improvement-hub/shadcn';
-
-import { CalendarDateRangePicker } from './components/date-range.picker';
-import { MainNav } from './components/main-nav';
 import { Overview } from './components/overview';
-import { RecentSales } from './components/recent-sales';
-import { Search } from './components/search';
-import TeamSwitcher from './components/team-switcher';
-import { UserNav } from './components/user-nav';
 
 interface TabProps {
   children: ReactNode;
@@ -43,12 +28,6 @@ function Tab({ children, selected, onClick }: TabProps) {
 }
 
 export function LayoutDashboard() {
-  const navigate = useNavigate();
-
-  const { pathname } = useResolvedPath('');
-  const route = useMatch(`${pathname}/:path/*`);
-  const matchedPath = route?.params.path;
-
   return (
     <>
       <div className="md:hidden">
@@ -68,15 +47,6 @@ export function LayoutDashboard() {
         />
       </div>
       <div className=" flex-col md:flex">
-        {/*<div className="border-b">*/}
-        {/*  <div className="flex h-16 items-center px-4">*/}
-
-        {/*    <MainNav className="mx-6" />*/}
-        {/*    <div className="ml-auto flex items-center space-x-4">*/}
-
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
@@ -85,19 +55,7 @@ export function LayoutDashboard() {
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
-            <TabsList>
-              <Tab onClick={() => navigate('feature-services')}>Services</Tab>
-              <Tab onClick={() => navigate('feature-agents')}>Agents</Tab>
-              <TabsTrigger
-                value="bookings"
-                onClick={() => navigate('feature-bookings')}
-              >
-                Bookings
-              </TabsTrigger>
-              <TabsTrigger value="reviews" onClick={() => navigate('feature-reviews')}>
-                Reviews
-              </TabsTrigger>
-            </TabsList>
+            <TabsList></TabsList>
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
@@ -218,10 +176,7 @@ export function LayoutDashboard() {
                       You made 265 sales this month.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    {/*<RecentSales />*/}
-                    <Outlet />
-                  </CardContent>
+                  <CardContent>{/*<Outlet />*/}</CardContent>
                 </Card>
               </div>
             </TabsContent>

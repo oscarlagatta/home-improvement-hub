@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+
 import { Footer } from './components/footer';
 import { Header } from './components/header';
 import { Sidebar } from './components/sidebar';
@@ -13,9 +13,7 @@ export const Layout: FC = () => {
         <SidebarProvider>
           <Sidebar />
         </SidebarProvider>
-        <main className="flex-1 p-4 bg-gray-50">
-          <Outlet />
-        </main>
+        <main className="flex-1 p-4 bg-gray-50">{/*<Outlet />*/}</main>
       </div>
       <Footer />
     </div>
