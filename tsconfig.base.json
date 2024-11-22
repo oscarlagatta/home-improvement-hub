@@ -83,6 +83,12 @@
       "@home-improvement-hub/user-management-models": [
         "libs/user-management/user-management-models/src/index.ts"
       ],
+      "@home-improvement-hub/user-management-ui": [
+        "libs/user-management/user-management-ui/src/index.ts"
+      ],
+      "@home-improvement-hub/feature-user-user-list-table": [
+        "libs/user-management/features/user-list/feature-user-list-table/src/index.ts"
+      ],
       "@home-improvement-hub/user-management-routing": [
         "libs/user-management/user-management-routing/src/index.ts"
       ],

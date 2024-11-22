@@ -1,7 +1,7 @@
 export function Ui() {
   return (
     <div>
-      <h1>Welcome to Ui!</h1>;
+      <h1>Welcome to Shared Ui!</h1>;
     </div>
   );
 }

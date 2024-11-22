@@ -1,16 +1,18 @@
-import { DataTable } from '@home-improvement-hub/shared-ui';
+import {
+  createColumns,
+  DataTable,
+  User,
+} from '@home-improvement-hub/shared-ui';
 import { useEffect, useState } from 'react';
-
-import { User } from '@home-improvement-hub/shared-ui';
-import { createColumns } from '@home-improvement-hub/shared-ui';
 import { useUsers } from '@home-improvement-hub/data';
-import { UserNav } from '@home-improvement-hub/shared-ui';
+// import { UserNav } from '@home-improvement-hub/shared-ui';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@home-improvement-hub/shadcn';
 import { FeatureCreateUser } from './pages/feature-create-user';
+
 export function FeatureUserListTable() {
   const { userList, isLoading } = useUsers(); //data from api
 
@@ -55,9 +57,7 @@ export function FeatureUserListTable() {
           </Popover>
         </div>
 
-        <div className="flex items-center space-x-2">
-          <UserNav />
-        </div>
+        <div className="flex items-center space-x-2">{/*<UserNav />*/}</div>
       </div>
       <DataTable
         data={users ?? []}
