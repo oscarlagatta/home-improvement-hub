@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Footer } from './components/footer';
-import { Header } from '@home-improvement-hub/shadcn';
+import { Header } from './components/header';
 
 export const Layout: FC = () => {
   return (

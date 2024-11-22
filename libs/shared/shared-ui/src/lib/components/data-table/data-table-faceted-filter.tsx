@@ -17,7 +17,7 @@ import {
   PopoverTrigger,
   Separator,
 } from '@home-improvement-hub/shadcn';
-import { cn } from '../../../../../../shadcn/src/libs/util';
+import { cn } from '@home-improvement-hub/shadcn';
 
 interface DataTableFacetedFilterProps<TData, TValue> {
   column?: Column<TData, TValue>;
