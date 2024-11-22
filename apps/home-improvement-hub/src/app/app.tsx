@@ -1,10 +1,15 @@
+import { ThemeProvider } from 'next-themes';
+import { Layout } from '@home-improvement-hub/shared-ui';
+
 export function App() {
   return (
-    <div>
-      <h1>Welcome to App</h1>
-    </div>
+    <ThemeProvider defaultTheme="system" storageKey="ui-theme">
+      <Layout />
+      {/*<Router>*/}
+      {/*  <ErrorBoundary>{useAppRoutes()}</ErrorBoundary>*/}
+      {/*</Router>*/}
+    </ThemeProvider>
   );
-
 }
 
 export default App;

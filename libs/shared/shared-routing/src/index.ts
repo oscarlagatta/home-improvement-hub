@@ -1,1 +1,2 @@
-export * from './lib/routing';
+export * from './lib/useAppRoutes';
+export * from './lib/routes';
